@@ -1,3 +1,14 @@
+## UC Berekely Cybersecurity Bootcamp
+### Ansible
+This folder contains ansible playbooks that were used in the Automated ELK Stack Deployment readme below.
+
+### Diagrams
+This folder contains diagrams from topics such as Networking and Cloud Security, along with any diagrams relating to the ELK Stack
+
+### Linux
+This folder contains setup scripts that are used on linux, to make life easier. Scripts include system info, for loops, and if statements.
+
+
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -58,6 +69,9 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box      | Yes                 | 73.189.197.168       |
 | Load Balancer | Yes                 | 73.189.197.168       |
 | ELK Server    | Yes                 | 73.189.197.168       |
+| Web-1         | No                  | 10.0.0.9             |
+| Web-2         | No                  | 10.0.0.9             |
+| Web-3         | No                  | 10.0.0.9             |
 
 ### Elk Configuration
 
