@@ -46,8 +46,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump-box-provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 73.189.197.168
 
-Machines within the network can only be accessed by ssh.
-- ELK VM is access by the jump box, with the ip of 10.0.0.9
+Machines within the network can only be accessed directly by ssh, using a key on the ansible jump box container, making the machines secure from the internet
 
 A summary of the access policies in place can be found in the table below.
 
@@ -55,7 +54,7 @@ A summary of the access policies in place can be found in the table below.
 |---------------|---------------------|----------------------|
 | Jump Box      | Yes                 | 73.189.197.168       |
 | Load Balancer | Yes                 | 73.189.197.168       |
-|               |                     |                      |
+| ELK Server    | Yes                 | 73.189.197.168       |
 
 ### Elk Configuration
 
@@ -90,6 +89,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the yml file to the ansible directory.
+- Copy the playbook file to the ansible directory.
 - Update the hosts file to include the IPs of the target machines
-- Run the playbook, and navigate to http://<machineip>:5601 to check that the installation worked as expected.
+- Run the playbook, and navigate to http://YOURMACHINEIP:5601 to check that the installation worked as expected.
+
+### Kibana Time!
+Once you verify that kibana has successfully been installed, you can monitor logs from your machines, or investgate sample data that can be added automatically.
