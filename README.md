@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [Elk Deployment Playbook](./Ansible/Elk_VM_Docker.yml)
   - [Web Docker Playbook](./Ansible/Web_VM_Docker.yml)
   - [Metricbeat Playbook](./Ansible/metricbeat-playbook.yml)
-  - [Filbeat Playbook](./Ansible/filebeat-playbook.yml)
+  - [Filebeat Playbook](./Ansible/filebeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topology
